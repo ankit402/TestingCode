@@ -1,0 +1,51 @@
+<html>
+    <head>
+        Palindrome number algorithm
+    </head>
+    <body>
+        <span>
+            Get the number from user
+             Hold the number in temporary variable
+             Reverse the number
+            Compare the temporary number with reversed number
+             If both numbers are same, print palindrome number
+            Else print not palindrome number
+        </span>
+        <p id="demo">
+
+
+        </p>
+    </body>
+
+    <script>
+        // let num = 121;
+        // let temp = num;
+        // let reverse=0;
+        //    let sum =0;
+        // while(num>0)
+        //   {
+        //     reverse= num%10;  // 121%10 
+        //     sum = (sum *10 ) + reverse;  //0*10 + 1 
+        //     num = num/10;    // 121/10
+        //     console.log(sum);
+        //   }
+          
+        // if(temp== sum){
+        //     console.log("Number is palindrome");
+        // }
+        // else{
+        //     console.log("Number is not palindrome");
+        // }
+          
+         // while(num>0);
+
+         function isPalindrome(num) {
+                const temp = num.toString().split('').reverse().join('') * 1;
+                // 1 2 1 /// 1 2 1 ] * 1 
+                return (result = num === parseInt(temp) ?  true : false);
+             }
+
+                console.log(isPalindrome(121));
+                console.log(isPalindrome(320));
+    </script>
+</html>

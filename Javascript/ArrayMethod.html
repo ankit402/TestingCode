@@ -1,0 +1,54 @@
+<html>
+    <head>
+        Array Method
+    </head>
+    <body>
+        <p id="demo"></p>
+        <span>tostring : Convert array into string</span>
+
+        <span>POP: Remove the last element from the array list </span>
+        <p id="poplast"></p>
+
+        <span>PUSH : Add a new element in the last of the array </span>
+        <p id="pushlast"></p>
+
+        <span>Shift : Remove the first element from beginning of the array</span>
+        <p id="shiftbegg"></p>
+
+        <span>Unshift : Add an element from the beginning of the array</span>
+        <p id="unshift"></p>
+
+        <span>Concat : Merging existing array into the array</span>
+        <p id="concatarray"></p>
+
+        <span>Sort : sort an array in ascending order</span>
+        <p id="sortarray"></p>
+
+        <span>Reverse : Reverse an array </span>
+        <p id="reverse"></p>
+        <span>Map Filter Reduce: map method used to creates a new array  from an existing one. perform a function on each element</span>
+    </body>
+    <script>
+            let mycards = ["FAB", "Citi", "Ajman", "Enbd", "EI", "ADCB"]
+
+            document.getElementById("demo").innerHTML = mycards.toString();
+
+            document.getElementById("poplast").innerHTML = mycards.pop();
+
+            let lastvalue = mycards.push("Mashreq");
+            document.getElementById("pushlast").innerHTML = mycards.toString();
+
+            let shiftbegg= mycards.shift();
+            document.getElementById("shiftbegg").innerHTML =shiftbegg;
+
+            let unshiftbegg = mycards.unshift("Deem");
+            document.getElementById("unshift").innerHTML = mycards;
+
+            let loan = ["3000", "2000", "1000", "5000"];
+            document.getElementById("concatarray").innerHTML = loan.concat(mycards);
+
+            document.getElementById("sortarray").innerHTML = loan.sort();
+
+            document.getElementById("reverse").innerHTML = loan.reverse();
+    </script>
+</html>

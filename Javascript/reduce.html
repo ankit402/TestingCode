@@ -1,0 +1,18 @@
+<html>
+    <head>Reduce</head>
+    <body>
+        <p id="demo"></p>
+    </body>
+    <script>
+        let t = [1,2,3,4,5,7,6,4,3,2,4,2,4,2,2];
+
+         let num2 = t.reduce(sum);
+
+         function sum(total, value){
+            return total+value;
+         }
+
+         document.getElementById("demo").innerHTML = num2;
+
+    </script>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>Calculate prime</head>
+    <body>
+        <p id="demo"></p>
+    </body>
+
+    <script>
+        let value = 57; let flag =0;
+        for(var i =2 ; i<= value/2; i++)
+        {
+            if(value%i==0)
+            {
+                console.log("Number is not prime");
+                document.getElementById("demo").innerHTML = value + " Number is not prime";
+                flag =1;
+                break;
+            }
+            
+        }
+        if(flag==0){
+                console.log("Number is prime");
+                document.getElementById("demo").innerHTML = value + " Number is prime";
+            }
+
+    </script>
+</html></htm>

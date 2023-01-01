@@ -1,0 +1,29 @@
+<html>
+    <head>Using Array Map  method</head>
+    <body>
+        <p id ="demo">
+        </p>
+
+        <p id="demo2">
+
+        </p>
+    </body>
+
+    <script>
+        let num1 = [1,2,3,4,5,6.7];
+        let num2 = num1.map(multiple);
+        let num3 = num2.map(sum);
+        function multiple(value)
+        {
+            return  value * 2;
+        }
+
+        function sum(value)
+        {
+            return value + 10;
+        }
+        document.getElementById("demo").innerHTML = num2;
+
+        document.getElementById("demo2").innerHTML = num3;
+    </script>
+</html>
